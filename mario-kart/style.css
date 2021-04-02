@@ -1,0 +1,99 @@
+td {
+  width: 10px;
+  height: 10px;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.bk { background: #000 }
+.bl {background: #241fad }
+.bw { background: #c7804a }
+.bwl { background: #edaa6f }
+.bwd { background: #63472b }
+.cy {background: #6ad4c6 }
+.cyd {background: #19756c }
+.gy {background: #9e9e9e }
+.og{background: #ff8112 }
+.rd { background: #ed0000 }
+.rdd { background: #9e0000 }
+.wt {background: #fff}
+
+.box {
+  position: relative;
+  overflow: hidden;
+  background: #f8e4b0;
+  width: 300px;
+  height: 320px;
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+#main {
+  position: relative;
+  z-index: 9;
+}
+
+.scene {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.mountain {
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 300px solid #00b8a0;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+.mountain.small {
+  top: 150px;
+  left: -150px;
+}
+.grass {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-image: linear-gradient(90deg,
+    #39ad07 0%, #39ad07 7.7%,   
+    #5fb21a 7.7%, #5fb21a 15.4%,
+    #a1e155 15.4%, #a1e155 23.1%,
+    #39ad07 23.1%, #39ad07 30.8%, 
+    #a1e155 30.8%, #a1e155 38.5%,
+    #5fb21a 38.5%, #5fb21a 46.2%,    
+    #4fa20a 46.2%, #4fa20a 53.9%,   
+    #5fb21a 53.9%, #5fb21a 61.6%,
+    #5fb21a 61.6%, #5fb21a 69.3%,
+    #a1e155 69.3%, #a1e155 77%,
+    #39ad07 77%, #39ad07 84.7%,   
+    #a1e155 84.7%, #a1e155 92.4%,
+    #a1e155 92.4%
+  );
+  background-size: 100% 15%;
+  background-position: 0 0, 0 7.7%, 0 15.4%, 0 23.1%, 0 30.8%, 0 38.5%, 0 46.2%, 0 53.9%, 0 61.6%, 0 69.3%, 0 77%, 0 84.7%, 0 92.4%, 0 100%;
+}
+
+.light {
+  position: absolute;
+  width: 1000px;
+  height: 30px;
+  background: rgba(255, 255, 255, .5);
+  transform: rotate(45deg);
+  top: 0;
+  left: -800px;
+  animation: test 4s infinite;
+  z-index: 10;
+}
+
+@keyframes test {
+  0% { left: -800px }
+  100% { left: 0 }
+}
